@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/stickeractbg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="23dp"
+        android:text="Send Sticker to: "
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/send"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/getUsername"
+        android:textColor="@color/white"
+        android:hint="Username"
+        android:textAlignment="center"
+        android:textSize="23dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginRight="18dp"/>
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_smily"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="80dp"/>
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_heart"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="250dp"/>
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_cross"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="250dp"/>
+
+    <ImageView
+        android:id="@+id/image4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_angry"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="80dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEND"
+        android:id="@+id/send"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="580dp"
+        android:layout_centerHorizontal="true"/>
+    </RelativeLayout>

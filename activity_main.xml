@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/mainactbg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_centerHorizontal="true"
+        android:text="You have sent X stickers in total !"
+        android:textSize="29dp"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/send"/>
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEND ACTIVITY"
+        android:layout_marginTop="370dp"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ALL RECIEVED MESSAGES"
+        android:id="@+id/recieved"
+        android:layout_marginTop="450dp"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOG OUT"
+        android:id="@+id/logout"
+        android:layout_marginTop="580dp"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
